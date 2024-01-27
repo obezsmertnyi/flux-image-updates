@@ -8,7 +8,7 @@ spec:
   decryption:
     provider: sops
   interval: 10m0s
-  path: ./clusters
+  path: ./clusters/kbot
   prune: true
   sourceRef:
     kind: GitRepository
