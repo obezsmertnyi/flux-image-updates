@@ -8,7 +8,7 @@ spec:
   imageRepositoryRef:
     name: kbot
   filterTags:
-    pattern: '.*-.*'
+    pattern: '^(v1\.0\.2-9215d76)(?:-.+)?$'
   policy:
     semver:
       range: '^v1.x.x-0'
