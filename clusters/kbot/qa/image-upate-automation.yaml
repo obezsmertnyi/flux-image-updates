@@ -4,12 +4,11 @@ metadata:
   name: kbot-auto-update-qa
   namespace: qa
 spec:
-  # suspend: false
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: kbot
-    namespace: qa
+    name: flux-system
+    namespace: flux-system
   git:
     checkout:
       ref:
