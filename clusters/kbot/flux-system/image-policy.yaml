@@ -1,3 +1,4 @@
+---
 apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImagePolicy
 metadata:
@@ -7,5 +8,5 @@ spec:
   imageRepositoryRef:
     name: kbot
   policy:
-    semver:
-      range: ">=1.0.2"
+    alphabetical:
+      order: asc
