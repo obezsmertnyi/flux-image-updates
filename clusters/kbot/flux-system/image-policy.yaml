@@ -7,5 +7,5 @@ spec:
   imageRepositoryRef:
     name: kbot
   policy:
-    alphabetical:
-      order: asc
+    semver:
+      range: ">=1.0.2"
