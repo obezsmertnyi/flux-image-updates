@@ -13,14 +13,14 @@ spec:
   git:
     checkout:
       ref:
-        branch: qa
+        branch: main
     commit:
       author:
         email: fluxcdbot@users.noreply.github.com
         name: fluxcdbot
       messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
     push:
-      branch: qa
+      branch: main
   update:
     path: ./clusters/kbot/qa
     strategy: Setters
