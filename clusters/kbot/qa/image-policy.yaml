@@ -8,5 +8,5 @@ spec:
   imageRepositoryRef:
     name: kbot
   policy:
-    semver:
-      range: 1.0.2
+    alphabetical:
+      order: asc
