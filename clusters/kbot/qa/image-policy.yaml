@@ -7,6 +7,9 @@ metadata:
 spec:
   imageRepositoryRef:
     name: kbot
+  filterTags:
+    pattern: '^(v?1\.[0-9]\.[0-9]{1,2})-[a-f0-9]+'
+    extract: '$1'
   policy:
-    alphabetical:
-      order: asc
+    semver:
+      range: ">=1.0.0 <2.0.0" 
