@@ -8,7 +8,7 @@ spec:
   imageRepositoryRef:
     name: kbot
   filterTags:
-    pattern: '^(v[0-9]+\.[0-9]+\.[0-9]+-[a-f0-9]+)(?:-linux-amd64)?$'
+    pattern: '^(v1\.0\.2-9215d76)(?:-linux-amd64)?$'
     extract: '$1'
   policy:
     semver:
