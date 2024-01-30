@@ -22,5 +22,5 @@ spec:
     push:
       branch: main
   update:
-    path: ./clusters/kbot/qa
+    path: ./clusters/kbot
     strategy: Setters
