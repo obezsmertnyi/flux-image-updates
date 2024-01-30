@@ -14,11 +14,11 @@ spec:
     checkout:
       ref:
         branch: qa
-    # commit:
-    #   author:
-    #     email: fluxcdbot@users.noreply.github.com
-    #     name: fluxcdbot
-    #   messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
+    commit:
+      author:
+        email: fluxcdbot@users.noreply.github.com
+        name: fluxcdbot
+      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
     push:
       branch: qa
   update:
