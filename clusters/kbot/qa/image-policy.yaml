@@ -8,7 +8,7 @@ spec:
   imageRepositoryRef:
     name: kbot
   filterTags:
-    pattern: '^(v1\.0\.2-9215d76)(?:-.+)?$' # Вибірка v1.0.2-9215d76 з можливим суфіксом
+    pattern: '^(v1\.0\.2-9215d76)(?:-linux-amd64)?$' # Шукає конкретний тег із можливим суфіксом
     extract: '$1'
   policy:
     alphabetical:
