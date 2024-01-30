@@ -11,5 +11,5 @@ spec:
     pattern: '^(v?1\.[0-9]+\.[0-9]+(?:-[a-f0-9]{7})?)$'
     extract: '$1'
   policy:
-    semver:
-      range: ">=v1.0.0 <v2.0.0" 
+    alphabetical:
+      order: asc
