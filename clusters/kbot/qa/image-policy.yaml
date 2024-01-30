@@ -7,9 +7,9 @@ metadata:
 spec:
   imageRepositoryRef:
     name: kbot
-  # filterTags:
-    # pattern: '^(v?1\.[0-9]+\.[0-9]+(?:-[a-f0-9]{7})?)$'
-    # extract: '$1'
+  filterTags:
+    pattern: '^(v1\.0\.2-9215d76)(?:-.+)?$' # Вибірка v1.0.2-9215d76 з можливим суфіксом
+    extract: '$1'
   policy:
     alphabetical:
-      order: 'v1.0.2-9215d76'
+      order: asc
