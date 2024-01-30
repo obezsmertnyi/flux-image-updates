@@ -1,0 +1,26 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+metadata:
+  name: kbot-auto-update-qa
+  namespace: qa
+spec:
+  suspend: false
+  interval: 1m0s
+  sourceRef:
+    kind: GitRepository
+    name: kbot
+    namespace: qa
+  git:
+    checkout:
+      ref:
+        branch: qa
+    # commit:
+    #   author:
+    #     email: fluxcdbot@users.noreply.github.com
+    #     name: fluxcdbot
+    #   messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
+    push:
+      branch: qa
+  update:
+    path: ./clusters/kbot/qa
+    strategy: Setters
