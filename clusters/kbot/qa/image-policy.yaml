@@ -11,13 +11,7 @@ spec:
     pattern: '^(v1\.0\.2-9215d76)(?:-linux-amd64)?$'
     extract: '$1'
   policy:
-    # semver:
-      # range: '^v1.x.x-0'
-  # filterTags:
-    # pattern: '^(v1\.0\.2-9215d76)(?:-linux-amd64)?$' # Шукає конкретний тег із можливим суфіксом
-    # extract: '$1'
-  # policy:
-    # semver:
-      # range: v1.0.2-9215d76-linux-amd64
+    semver:
+      range: '^v1.x.x-0'
     alphabetical:
       order: asc
