@@ -12,6 +12,6 @@ spec:
     extract: '$1'
   policy:
     semver:
-      range: 'sdfs'
+      range: 'v1.0.2-e2b872c-linux-amd64'
     alphabetical:
       order: asc
