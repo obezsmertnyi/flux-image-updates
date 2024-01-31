@@ -12,6 +12,6 @@ spec:
     extract: '$1'
   policy:
     semver:
-      range: '^v1.x.x-0'
+      range: 'sdfs'
     alphabetical:
       order: asc
