@@ -12,6 +12,3 @@ spec:
         kind: GitRepository
         name: kbot
   interval: 1m0s
-  values:
-    image:
-      tag: "v1.0.2-e2b872c-linux-amd64" # {"$imagepolicy": "dev:kbot:tag"}
