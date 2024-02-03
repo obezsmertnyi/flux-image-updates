@@ -1,9 +1,8 @@
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: kbot
-  namespace: prod
+  namespace: dev
 spec:
   chart:
     spec:
@@ -13,3 +12,6 @@ spec:
         kind: GitRepository
         name: kbot
   interval: 1m0s
+  values:
+    image:
+      tag: "v1.0.2-9215d76-linux-amd64" # {"$imagepolicy": "qa:kbot:tag"}
