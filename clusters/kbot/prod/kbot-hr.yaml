@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: kbot
-  namespace: dev
+  namespace: prod
 spec:
   chart:
     spec:
