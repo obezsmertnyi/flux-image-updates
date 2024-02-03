@@ -9,4 +9,4 @@ spec:
     name: kbot
   policy:
     semver:
-      range: 'v1.0.2-e2b872c-linux-amd64'
+      range: 'v1.0.2-f67e572-linux-amd64'
