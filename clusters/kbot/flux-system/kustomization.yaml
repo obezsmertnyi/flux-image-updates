@@ -4,8 +4,6 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
-- image-policy.yaml
-- image-repo.yaml
 patches:
   - path: sops-patch.yaml
     target:
