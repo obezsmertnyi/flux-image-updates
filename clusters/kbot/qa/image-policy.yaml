@@ -12,6 +12,6 @@ spec:
   #   extract: '$1'
   policy:
     semver:
-      range: 'v1.0.2-f67e572-linux-amd64'
+      range: 'v1.0.2-e2b872c-linux-amd64'
     # alphabetical:
     #   order: asc
