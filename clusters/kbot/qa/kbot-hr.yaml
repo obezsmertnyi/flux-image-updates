@@ -14,4 +14,4 @@ spec:
   interval: 1m0s
   values:
     image:
-      tag: "v1.0.3-40da73c-linux-amd64" # {"$imagepolicy": "qa:kbot:tag"}
+      tag: "v1.0.3-55b73f5-linux-amd64" # {"$imagepolicy": "qa:kbot:tag"}
