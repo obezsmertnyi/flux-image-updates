@@ -4,7 +4,7 @@ metadata:
   name: kbot-auto-update-prod
   namespace: prod
 spec:
-  interval: 1m0s
+  interval: 10s
   sourceRef:
     kind: GitRepository
     name: flux-system

@@ -6,4 +6,4 @@ metadata:
   namespace: qa
 spec:
   image: ghcr.io/obezsmertnyi/kbot
-  interval: 1m0s
+  interval: 10s

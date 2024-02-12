@@ -6,4 +6,4 @@ metadata:
   namespace: prod
 spec:
   image: ghcr.io/obezsmertnyi/kbot
-  interval: 1m0s
+  interval: 20s

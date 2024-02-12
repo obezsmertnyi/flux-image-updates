@@ -11,7 +11,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: kbot
-  interval: 1m0s
+  interval: 10s
   values:
     image:
       tag: "v1.0.3-642a506-linux-amd64" # {"$imagepolicy": "prod:kbot:tag"}

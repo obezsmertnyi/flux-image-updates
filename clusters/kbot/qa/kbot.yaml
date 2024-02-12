@@ -5,7 +5,7 @@ metadata:
   name: kbot
   namespace: qa
 spec:
-  interval: 1m0s
+  interval: 10s
   ref:
     branch: qa
   url: https://github.com/obezsmertnyi/kbot
