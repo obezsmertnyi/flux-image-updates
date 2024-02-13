@@ -23,7 +23,10 @@ spec:
             cpu: "500m"
           limits:
             memory: "512Mi"
-            cpu: "750m" 
+            cpu: "750m"
+        ports:
+          - name: metrics
+            containerPort: 9090
         env:
           - name: SLACK_AUTH_TOKEN
             valueFrom:
