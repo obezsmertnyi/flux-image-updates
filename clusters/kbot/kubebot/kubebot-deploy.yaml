@@ -16,7 +16,7 @@ spec:
       serviceAccountName: kubebot-manager
       containers:
       - name: kubebot
-        image: ghcr.io/obezsmertnyi/slackbot:v1.0.2-3d510b7-linux-amd64
+        image: ghcr.io/obezsmertnyi/slackbot:v1.0.2-cd4140a-linux-amd64
         resources:
           requests:
             memory: "64Mi"
