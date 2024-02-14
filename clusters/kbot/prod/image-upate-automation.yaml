@@ -13,7 +13,7 @@ spec:
   git:
     checkout:
       ref:
-        branch: main
+        branch: prod
     commit:
       messageTemplate: |
         Automated image update
@@ -38,7 +38,7 @@ spec:
         email: fluxcdbot@users.noreply.github.com
         name: fluxcdbot
     push:
-      branch: main
+      branch: prod
   update:
     path: ./clusters/kbot/prod
     strategy: Setters
