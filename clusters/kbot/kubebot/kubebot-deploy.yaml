@@ -14,6 +14,10 @@ spec:
         app: kubebot
     spec:
       serviceAccountName: kubebot-manager
+      volumes:
+      - name: kubebot-storage
+        persistentVolumeClaim:
+          claimName: kubebot-pvc
       containers:
       - name: kubebot
         image: ghcr.io/obezsmertnyi/slackbot:v1.0.2-cd4140a-linux-amd64
@@ -27,6 +31,9 @@ spec:
         ports:
           - name: metrics
             containerPort: 9090
+        volumeMounts:
+        - name: kubebot-storage
+          mountPath: "/data"
         env:
           - name: SLACK_AUTH_TOKEN
             valueFrom:
