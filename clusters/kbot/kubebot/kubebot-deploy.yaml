@@ -20,7 +20,7 @@ spec:
           claimName: kubebot-pvc
       containers:
       - name: kubebot
-        image: ghcr.io/obezsmertnyi/slackbot:v1.0.2-cd4140a-linux-amd64
+        image: ghcr.io/obezsmertnyi/slackbot:v1.0.2-9ea6dd4-linux
         resources:
           requests:
             memory: "256Mi"
