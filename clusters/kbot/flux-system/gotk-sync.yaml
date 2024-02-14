@@ -23,7 +23,7 @@ spec:
   ref:
     branch: prod
   secretRef:
-    name: flux-prod-system
+    name: flux-system
   url: ssh://git@github.com/obezsmertnyi/flux-image-updates.git
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
