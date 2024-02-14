@@ -33,7 +33,7 @@ spec:
             containerPort: 9090
         volumeMounts:
         - name: kubebot-storage
-          mountPath: "/data"
+          mountPath: "/"
         env:
           - name: SLACK_AUTH_TOKEN
             valueFrom:
