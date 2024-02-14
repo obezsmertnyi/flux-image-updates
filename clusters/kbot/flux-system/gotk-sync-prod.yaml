@@ -8,6 +8,8 @@ spec:
   interval: 18s
   ref:
     branch: prod
+  secretRef:
+    name: flux-system
   url: ssh://git@github.com/obezsmertnyi/flux-image-updates.git
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
